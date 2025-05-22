@@ -1,6 +1,6 @@
 import requests
 
-BASE_URL = "http://localhost:8000"
+BASE_URL = "https://ai-backend-ndil.onrender.com"
 
 def generate_prompt(user_id: str, query: str):
     response = requests.post(f"{BASE_URL}/generate", json={
